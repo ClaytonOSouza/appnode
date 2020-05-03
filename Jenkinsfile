@@ -8,7 +8,7 @@ pipeline {
     stages {
 	stage('Cloning our Git') {
 	    steps {
-	    git 'https://github.com/SelecaoGlobocom/clayton-souza.git'
+	    git 'https://github.com/ClaytonOSouza/appnode.git'
             sh 'ls -lrth'
          }
     }
