@@ -1,0 +1,7 @@
+---
+- name: Deploy Terraform
+  hosts: 172.31.61.45
+  gather_facts: False
+  become: true
+  roles:
+    - { role: terraform }
