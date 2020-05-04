@@ -16,7 +16,8 @@ pipeline {
 	    steps{
 	        script {
 		    dockerImage = docker.build registry + ":$BUILD_NUMBER"
-	            sh 'docker images'
+	            sh 'docker login'
+                    sh 'docker images'
                     sh 'ls -lrth'
               }
 	  }	 
