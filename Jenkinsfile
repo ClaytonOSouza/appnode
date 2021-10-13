@@ -19,6 +19,7 @@ pipeline {
 	            sh 'docker login'
                     sh 'docker images'
                     sh 'ls -lrth'
+                    sh 'pwd'
               }
 	  }	 
     }
